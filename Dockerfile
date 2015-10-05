@@ -17,7 +17,7 @@ RUN    sudo apt-get install -y software-properties-common \
     && sudo apt-add-repository ppa:staticfloat/julianightlies \
     && sudo apt-add-repository ppa:staticfloat/julia-deps \
     && sudo apt-get -qq update \
-    && sudo apt-get install -y julia wget vim\
+    && sudo apt-get install -y julia wget vim g++ git \
     && cd /tmp \
     && touch nemo_install \
     && echo 'Pkg.clone("https://github.com/fieker/Nemo.jl")' > nemo_install \
